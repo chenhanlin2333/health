@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".detailfood.DetailFoodActivity"
+    android:fitsSystemWindows="true">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tl_back"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:title="食物名字"
+        app:navigationIcon="@drawable/ic_keyboard_arrow_left_black_24dp"
+        android:gravity="center_vertical"
+        style="@style/Toolbar.Mystyle"
+        android:background="@drawable/bg_border"
+        >
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_tu"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@mipmap/ic_launcher"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_food_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:text="香蕉"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingBottom="30dp">
+                        <TextView
+                            android:id="@+id/tv_calorie_ke"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="bottom"
+                            android:textSize="25sp"
+                            android:textStyle="bold"
+                            android:text="93千卡"
+                            />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="match_parent"
+                            android:gravity="bottom"
+                            android:text="/每100克"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="bottom|center_horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_qianka"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/shape_select"
+                            android:paddingBottom="10dp"
+                            android:text="千卡"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="bottom|center_horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_qianjiao"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="千焦"
+                            android:textIsSelectable="false"
+                            android:paddingBottom="10dp"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#f1f1f1"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="20dp"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="营养"/>
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="每100克"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_height="wrap_content"
+                    android:text="备注"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f1f1f1"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rc_nutrition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+            </android.support.v7.widget.RecyclerView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="10dp"
+                android:layout_height="1dp"
+                android:background="#f1f1f1"/>
+            <TextView
+                android:id="@+id/tv_more_nutrition"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="更多营养元素"
+                android:textSize="16sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#f1f1f1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="食物红绿灯"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical">
+                    <TextView
+                        android:id="@+id/tv_pingjia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/holo_green_light"
+                        android:text="推荐"/>
+                    <TextView
+                        android:id="@+id/tv_content"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="match_parent"
+                        android:text="一种热量较低纤维含量较高的粗粮，适量进食可以缓解便秘，营养学会建议每天吃50g以上粗粮，减肥期间推荐食用。"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

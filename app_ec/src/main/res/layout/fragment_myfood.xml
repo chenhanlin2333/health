@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_horizontal"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="10dp"
+                            android:layout_alignParentLeft="true"
+                            android:textSize="20sp"
+                            android:text="本周\n累计\n营养量" />
+
+                        <TextView
+                            android:id="@+id/tv_gotonewfood"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:paddingRight="20dp"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center"
+                            android:textColor="@android:color/holo_orange_light"
+                            android:text="添加食物记录"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_startvs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="3dp"
+                            android:layout_toLeftOf="@+id/tv_gotonewfood"
+                            android:gravity="center"
+                            android:paddingRight="5dp"
+                            android:text="食物对比"
+                            android:textColor="@android:color/holo_orange_light" />
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f1f1f1"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center">
+                            <TextView
+                                android:id="@+id/tx_sumFood"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="24500kg"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="累计食物千克数"/>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/tv_sum_danbai"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="200kg"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="累计蛋白质克数"/>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_marginLeft="20dp">
+
+                            <TextView
+                                android:id="@+id/tv_sum_calorie"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="312300kj"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="累计热量"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f1f1f1"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center">
+                            <TextView
+                                android:id="@+id/tv_sum_zhifang"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="24500kg"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="累计脂肪克数"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/tv_sum_tanshui"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="200kg"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="累计碳水化合物"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_marginLeft="20dp">
+
+                            <TextView
+                                android:id="@+id/tv_sum_weishenshu"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="312300kj"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="维生素c"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/Rv_dayoffood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

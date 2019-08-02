@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.chen.app_ec">
+
+    <application>
+        <activity android:name=".newmyfood.NewFoodSearchActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".newmyfood.NewFoodActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".foodvs.VsFoodactivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".search.SearchActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".detailfood.DetailNutritionActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".detailfood.DetailFoodActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Ec_core_content.EcActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".login.NavigationActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".login.LoginActivity"
+            android:screenOrientation="portrait"/>
+
+        <provider
+            android:authorities="com.zhi_dian.provider"
+            android:name="android.support.v4.content.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path">
+            </meta-data>
+        </provider>
+    </application>
+</manifest>

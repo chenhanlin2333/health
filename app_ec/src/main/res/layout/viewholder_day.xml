@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    app:cardCornerRadius="4dp"
+    android:layout_marginHorizontal="4dp"
+    android:layout_marginTop="5dp"
+    >
+
+    <TextView
+        android:id="@+id/tv_food_month"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="一月"/>
+
+
+    <ImageView
+        android:id="@+id/img_up_down"
+        android:src="@drawable/shape_down_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        />
+
+
+</android.support.v7.widget.CardView>
